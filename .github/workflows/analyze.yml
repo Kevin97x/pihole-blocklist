@@ -1,0 +1,32 @@
+name: Analyze Pi-hole source overlap
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Analyze overlap and exclusive contributions
+        run: python analyze_sources.py
+
+      - name: Upload audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-coverage-report
+          path: audit-results/
+          if-no-files-found: error
+          retention-days: 14
