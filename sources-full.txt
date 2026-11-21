@@ -26,13 +26,11 @@ https://phishing.army/download/phishing_army_blocklist_extended.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts
-https://urlhaus.abuse.ch/downloads/hostfile/
 https://lists.cyberhost.uk/malware.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
 https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
-https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d09274a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
 https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt
 https://v.firebog.net/hosts/RPiList-Malware.txt
 https://v.firebog.net/hosts/RPiList-Phishing.txt
@@ -40,7 +38,6 @@ https://blocklistproject.github.io/Lists/alt-version/malware-nl.txt
 https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
 https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
 https://blocklistproject.github.io/Lists/ads.txt
-https://blocklistproject.github.io/Lists/everything.txt
 https://blocklistproject.github.io/Lists/fraud.txt
 https://blocklistproject.github.io/Lists/malware.txt
 https://blocklistproject.github.io/Lists/phishing.txt
