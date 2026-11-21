@@ -1,0 +1,4 @@
+# Recommended: well-maintained general blocking + threat intelligence.
+# Hosts versions deliberately used so the builder can produce a plain domain list.
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists-legacy@latest/domains/pro.txt
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists-legacy@latest/domains/tif.txt
