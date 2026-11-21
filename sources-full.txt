@@ -45,7 +45,6 @@ https://blocklistproject.github.io/Lists/ransomware.txt
 https://blocklistproject.github.io/Lists/scam.txt
 https://blocklistproject.github.io/Lists/tracking.txt
 https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
-https://v.firebog.net/hosts/Prigent-Adult.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt
 https://v.firebog.net/hosts/Prigent-Malware.txt
 https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
