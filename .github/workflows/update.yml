@@ -1,11 +1,10 @@
-
 name: Update Pi-hole blocklists
 
 on:
   workflow_dispatch:
     inputs:
       profile:
-        description: "Select blocklist profile"
+        description: Select blocklist profile
         required: true
         default: balanced
         type: choice
@@ -22,7 +21,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,13 +31,23 @@ jobs:
           python-version: "3.12"
 
       - name: Generate blocklist
-        run: |
-          python build.py --profile "${{ inputs.profile || 'balanced' }}"
+        env:
+          PROFILE: ${{ inputs.profile || 'balanced' }}
+        run: python build.py --profile "$PROFILE"
+
+      - name: Split full list into GitHub-friendly files
+        env:
+          PROFILE: ${{ inputs.profile || 'balanced' }}
+        run: python split_blocklist.py --profile "$PROFILE" --max-mib 40
 
       - name: Commit updated blocklist
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add blocklist-*.txt
-          git diff --cached --quiet || git commit -m "Auto-update blocklists"
-          git push
+          git add -A -- 'blocklist-*.txt'
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update blocklists"
+            git push
+          else
+            echo "Blocklists unchanged"
+          fi
