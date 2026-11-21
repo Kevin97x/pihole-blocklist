@@ -30,7 +30,6 @@ https://lists.cyberhost.uk/malware.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
 https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
-https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
 https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt
 https://v.firebog.net/hosts/RPiList-Malware.txt
 https://v.firebog.net/hosts/RPiList-Phishing.txt
